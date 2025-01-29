@@ -45,10 +45,7 @@
         "laravel": {
             "providers": [
                 "Esign\\DynamateSignature\\DynamateSignatureServiceProvider"
-            ],
-            "aliases": {
-                "DynamateSignature": "Esign\\DynamateSignature\\Facades\\DynamateSignatureFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
