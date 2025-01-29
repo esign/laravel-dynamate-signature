@@ -1,17 +1,17 @@
 {
-    "name": ":vendor/:package_slug",
-    "description": ":package_description",
+    "name": "esign/laravel-dynamate-signature",
+    "description": "Display the Dynamate-branded signature",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "esign",
+        "dynamate-signature"
     ],
-    "homepage": "https://github.com/:vendor/:package_slug",
+    "homepage": "https://github.com/esign/laravel-dynamate-signature",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Jordy Van der Haegen",
+            "email": "jordy@esign.eu",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor_namespace_escaped\\": "src"
+            "Esign\\DynamateSignature\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor_namespace_escaped\\Tests\\": "tests"
+            "Esign\\DynamateSignature\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                ":vendor_namespace_escaped\\:studly_package_nameServiceProvider"
+                "Esign\\DynamateSignature\\DynamateSignatureServiceProvider"
             ],
             "aliases": {
-                ":studly_package_name": ":vendor_namespace_escaped\\Facades\\:studly_package_nameFacade"
+                "DynamateSignature": "Esign\\DynamateSignature\\Facades\\DynamateSignatureFacade"
             }
         }
     },
