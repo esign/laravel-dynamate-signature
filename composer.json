@@ -1,9 +1,10 @@
 {
     "name": "esign/laravel-dynamate-signature",
-    "description": "Display the Dynamate-branded signature",
+    "description": "Display a Dynamate-branded signature",
     "keywords": [
         "esign",
-        "dynamate-signature"
+        "dynamate",
+        "signature"
     ],
     "homepage": "https://github.com/esign/laravel-dynamate-signature",
     "license": "MIT",
