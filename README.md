@@ -1,6 +1,6 @@
 # Display a Dynamate-branded signature
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/esign/laravel-dynamate-signature.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-dynamate-signature)
+[![Latest theme on Packagist](https://img.shields.io/packagist/v/esign/laravel-dynamate-signature.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-dynamate-signature)
 [![Total Downloads](https://img.shields.io/packagist/dt/esign/laravel-dynamate-signature.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-dynamate-signature)
 ![GitHub Actions](https://github.com/esign/laravel-dynamate-signature/actions/workflows/main.yml/badge.svg)
 
@@ -19,6 +19,10 @@ To display the Dynamate-branded signature, you may use any of the following vari
 
 ```blade
 <x-dynamate-signature::default />
+<x-dynamate-signature::default theme="light" animated="{{ false }}" positionRight="10rem" positionAbsolute="{{ false }}" colorOverride="#ed1c24" />
+
+<x-dynamate-signature::powered-by />
+<x-dynamate-signature::powered-by theme="light" colorOverride="#ed1c24" />
 ```
 
 In case you want to customize the view components you may publish the views:
