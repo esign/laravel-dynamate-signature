@@ -15,6 +15,11 @@ composer require esign/laravel-dynamate-signature
 ```
 
 ## Usage
+To display the Dynamate contact information in your head, please use following variant:
+```blade
+<x-dynamate-signature::head />
+```
+
 To display the Dynamate-branded signature, you may use any of the following variants:
 
 ```blade
