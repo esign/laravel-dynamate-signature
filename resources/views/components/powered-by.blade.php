@@ -1,9 +1,22 @@
+<style>
+    @media (min-width: 1024px) {
+        .dynamate-logo--absolute {
+            position: absolute;
+        }
+    }
+</style>
+
 @props([
     'theme' => 'normal',
+    'positionRight' => '0',
+    'positionAbsolute' => true,
     'colorOverride' => null,
 ])
 
 <a 
+    @if ($positionAbsolute) 
+        class="dynamate-logo--absolute"
+    @endif
     href="https://www.dynamate.be/" 
     target="_blank"
     title="Highly technical and tasteful websites, webshops, web applications and online marketing, tailored to your story."
@@ -15,6 +28,7 @@
         outline: 0;
         z-index: 100;
         backface-visibility: hidden;
+        {{ $positionAbsolute ? "right: {$positionRight};" : '' }}
     "
     onmouseover="this.style.opacity='1'"
     onmouseout="this.style.opacity='0.6'"

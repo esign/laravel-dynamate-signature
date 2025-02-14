@@ -19,7 +19,7 @@
 @props([
     'theme' => 'normal',
     'animated' => true,
-    'positionRight' => '4rem',
+    'positionRight' => '0',
     'positionAbsolute' => true,
     'colorOverride' => null,
 ])
@@ -40,7 +40,7 @@
         z-index: 999; 
         overflow: hidden; 
         transform-origin: right;
-        {{ $positionAbsolute && $animated ? "right: {$positionRight};" : '' }}
+        {{ $positionAbsolute ? "right: {$positionRight};" : '' }}
     "
 >
     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="20" viewBox="0 0 348.151 55.785">
