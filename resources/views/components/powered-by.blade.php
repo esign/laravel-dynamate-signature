@@ -11,6 +11,7 @@
     'positionRight' => '0',
     'positionAbsolute' => true,
     'colorOverride' => null,
+    'transform' => null,
 ])
 
 <a 
@@ -29,6 +30,7 @@
         z-index: 100;
         backface-visibility: hidden;
         {{ $positionAbsolute ? "right: {$positionRight};" : '' }}
+        {{ $transform ? "transform: {$transform};" : '' }}
     "
     onmouseover="this.style.opacity='1'"
     onmouseout="this.style.opacity='0.6'"
