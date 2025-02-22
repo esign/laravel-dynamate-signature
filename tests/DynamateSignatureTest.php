@@ -5,7 +5,7 @@ namespace Esign\DynamateSignature\Tests;
 use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 
-class DynamateSignatureTest extends TestCase
+final class DynamateSignatureTest extends TestCase
 {
     use InteractsWithViews;
 
