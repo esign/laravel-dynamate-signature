@@ -18,7 +18,7 @@
     @if ($positionAbsolute) 
         class="dynamate-logo--absolute"
     @endif
-    href="https://www.dynamate.be/" 
+    href="https://www.dynamate.be/expertise/e-commerce-web" 
     target="_blank"
     title="Highly technical and tasteful websites, webshops, web applications and online marketing, tailored to your story."
     rel="noopener nofollow"
